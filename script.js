@@ -1,5 +1,8 @@
 const panels = document.querySelectorAll('.panel');
 
+// Set the first panel as active initially
+panels[0].classList.add('active');
+
 panels.forEach(panel => {
     panel.addEventListener('click', () => {
         removeActiveClasses();
